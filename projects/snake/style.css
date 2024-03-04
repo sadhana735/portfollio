@@ -1,0 +1,62 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Open+Sans:ital,wght@1,300;1,400&family=Poppins:ital,wght@1,100;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url(zldaLS.webp);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+background:linear-gradient(rgb(158, 233, 158), rgb(128, 128, 101));
+width: 92vmin;
+height: 92vmin;
+border: solid black;
+display: grid;
+grid-template-columns: repeat(18,1fr);
+grid-template-rows: repeat(18, 1fr);
+}
+    .head {
+        background: linear-gradient(#a75050,#67b6be);
+        border: 2px solid #880000;
+        border-radius: 12px;
+        transform: scale(1.27);
+    }
+
+.snake{
+    background-color: rgb(133, 93, 127);
+    border: .25vmin solid rgb(0, 0, 0);
+    border-radius: 16px;
+}
+.food {
+    background: linear-gradient(rgb(190 119 119),rgb(71 215 15));
+    border: .25vmin solid #0b2d00;
+    border-radius: 16px;
+    transform: scale(0.8);
+}
+#scoreBox{
+    position: absolute;
+    top: 19px;
+    right: 200px;
+    font-weight: bold;
+    font-size: 38px;
+    font-family: 'Lugrasimo', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+#HighScoreBox{
+    position: absolute;
+    top: 61px;
+    right: 119px;
+    font-weight: bold;
+    font-size: 38px;
+    font-family: 'Lugrasimo', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
